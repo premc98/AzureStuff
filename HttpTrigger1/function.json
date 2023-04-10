@@ -14,6 +14,21 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "name": "myInputBlob",
+      "type": "blob",
+      "path": "incontainer/{name}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "name": "myOutputBlob",
+      "type": "blob",
+      "path": "outcontainer/{name}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
     }
+
   ]
 }
